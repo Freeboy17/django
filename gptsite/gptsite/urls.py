@@ -23,4 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('loginsystem/', include('loginsystem.urls')),
     path('filetransfer/', include('filetransfer.urls')),
+    path('', include('homepage.urls')),
 ]

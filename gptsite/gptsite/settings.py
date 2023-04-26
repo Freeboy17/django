@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'filetransfer.apps.FiletransferConfig',
     'loginsystem.apps.LoginsystemConfig',
+    'homepage.apps.HomepageConfig',
 ]
 
 MIDDLEWARE = [
