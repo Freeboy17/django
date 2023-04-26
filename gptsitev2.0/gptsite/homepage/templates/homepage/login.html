@@ -1,0 +1,32 @@
+{% extends 'homepage/base.html' %}
+{% load static %}
+{% block content %}
+
+<form action="action_page.php" method="post">
+    <link rel="stylesheet" type="text/css" href="{% static 'homepage/css/login.css' %}">
+ 
+  
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+      <p style="text-align: center; position: relative; margin-top: -3%;">Don't have an account? <a href="{% url 'register' %}">Register</a>.</p>
+    </div>
+    <!-- <div class="container signin" style="text-align: center; background-color: #f1f1f1;">
+      <p>Don't have an account? <a href="{% url 'register' %}">Register</a>.</p>
+    </div> -->
+   
+  </form>
+{% endblock %}
