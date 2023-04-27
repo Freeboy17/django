@@ -1,6 +1,6 @@
 Requirements:
 
-Users should be able to register for an account and log in.
+Users should be able to register for an account and log in. DONE
 
 Once logged in, users should be able to upload files to the server.
 
