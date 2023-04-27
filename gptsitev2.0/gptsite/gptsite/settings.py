@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 
 # Application definition
 
@@ -38,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'homepage.apps.HomepageConfig',
+    'crispy_forms',
+    'crispy_bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -127,4 +131,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # my additions
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/"
+LOGIN_URL = 'login'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')

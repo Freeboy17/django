@@ -28,6 +28,9 @@
   <div class="w3-content" style="max-width:2000px;margin-top:46px">
       {% block content %}
       {% endblock %}
+      {%  if user.is_authenticated %}
+            <p>You are logged in as {{ request.user }}. Click here to <a href="{% url 'logout' %}">log out</a></p>
+        {% endif %}
     </div>
 
   <!-- End Page Content -->
